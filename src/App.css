@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(51, 51, 51, 0.87); /* Gris oscuro para texto principal */
+  background-color: #f9f9f9; /* Gris muy claro de fondo */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+a {
+  font-weight: 500;
+  color: #2e7d32; /* Verde institucional (oscuro) */
+  text-decoration: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a:hover {
+  color: #1b5e20; /* Verde aún más oscuro al pasar el mouse */
+  text-decoration: underline;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.8em;
+  line-height: 1.3;
+  color: #333; /* Gris oscuro para encabezados */
 }
 
-.card {
-  padding: 2em;
+button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 0.2rem;
+  background-color: #f0f0f0; /* Gris claro de fondo para botones */
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+button:hover {
+  border-color: #777; /* Gris más oscuro al pasar el mouse */
+  background-color: #e0e0e0; /* Gris ligeramente más oscuro al pasar el mouse */
+  color: #222;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #777; /* Contorno gris al enfocar */
+  outline-offset: 2px;
 }
 
-.read-the-docs {
-  color: #888;
+.primary-button {
+  background-color: #4caf50; /* Verde primario (más claro) */
+  color: white;
+  border-color: #4caf50;
+}
+
+.primary-button:hover {
+  background-color: #388e3c; /* Verde más oscuro al pasar el mouse */
+  border-color: #388e3c;
 }
